@@ -11,9 +11,11 @@
     display: flex;
 }
 
+/* altezza delle due sezioni principali in vh */
 aside,
 main {
-    height: calc(100vh - 100px);
+    /* (30 in più è il padding del footer) */
+    height: calc(100vh - 130px);
 }
 
 /* ASIDE */
@@ -26,6 +28,7 @@ aside {
 
 /* MAIN */
 main {
+    overflow: auto;
     color: white;
     background-color: #141922;
     padding: 20px;
@@ -36,6 +39,8 @@ main {
 footer {
     color: white;
     background-color: #282828;
+    position: fixed;
+    width: 100%;
 }
 
 footer>section:first-child {
