@@ -54,18 +54,24 @@ main>.main-section {
     padding: 20px;
 }
 
-.recently-played>.go-flex {
+.recently-played>.go-flex,
+.created-for-you>.go-flex,
+.popolar-artists>.go-flex {
     margin: 0 -10px;
 }
 
-.recently-played>.go-flex div {
+.recently-played>.go-flex div,
+.created-for-you>.go-flex div,
+.popolar-artists>.go-flex div {
     /* debug */
     width: 160px;
     height: 160px;
     background-color: red;
 }
 
-.recently-played>.go-flex>* {
+.recently-played>.go-flex>*,
+.created-for-you>.go-flex>*,
+.popolar-artists>.go-flex>* {
     margin: 0 10px;
 }
 
