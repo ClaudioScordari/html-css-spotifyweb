@@ -18,6 +18,14 @@ main {
     height: calc(100vh - 130px);
 }
 
+ul li {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+}
+
 /* ASIDE */
 aside {
     color: grey;
@@ -28,7 +36,7 @@ aside {
 
 /* MAIN */
 main {
-    overflow: auto;
+    overflow-y: auto;
     color: white;
     background-color: #141922;
     width: 80%;
@@ -37,8 +45,28 @@ main {
 main .upgrade-bar {
     height: 100px;
     background-color: #080B12;
-    position: sticky;
+    position: fixed;
     width: 100%;
+}
+
+main>.main-section {
+    margin-top: 100px;
+    padding: 20px;
+}
+
+.recently-played>.go-flex {
+    margin: 0 -10px;
+}
+
+.recently-played>.go-flex div {
+    /* debug */
+    width: 160px;
+    height: 160px;
+    background-color: red;
+}
+
+.recently-played>.go-flex>* {
+    margin: 0 10px;
 }
 
 /* FOOTER */
