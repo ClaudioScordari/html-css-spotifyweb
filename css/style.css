@@ -11,9 +11,26 @@
     display: flex;
 }
 
-/* HEADER */
+aside,
+main {
+    height: calc(100vh - 100px);
+}
+
+/* ASIDE */
+aside {
+    color: grey;
+    background-color: black;
+    padding: 15px;
+    width: 20%;
+}
 
 /* MAIN */
+main {
+    color: white;
+    background-color: #141922;
+    padding: 20px;
+    width: 80%;
+}
 
 /* FOOTER */
 footer {
