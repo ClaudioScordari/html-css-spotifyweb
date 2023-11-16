@@ -31,8 +31,14 @@ main {
     overflow: auto;
     color: white;
     background-color: #141922;
-    padding: 20px;
     width: 80%;
+}
+
+main .upgrade-bar {
+    height: 100px;
+    background-color: #080B12;
+    position: sticky;
+    width: 100%;
 }
 
 /* FOOTER */
@@ -77,7 +83,7 @@ footer>section:first-child .go-flex>div:nth-child(2) {
     border: 1px solid white;
 }
 
-@media screen and (max-width: 910px) {}
+@media screen and (max-width: 1110px) {}
 
 @media screen and (max-width: 700px) {}
 
