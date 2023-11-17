@@ -35,13 +35,6 @@ aside {
     position: relative;
 }
 
-aside div.go-flex {
-    flex-direction: column;
-    height: calc(100% - 130px);
-    /* debug */
-    border: 1px dashed white;
-}
-
 aside .playlist>div:first-of-type div {
     display: inline-block;
 }
@@ -52,10 +45,6 @@ aside>div:last-child {
     /* (100% - 30px) perchè questi px sono i pading sx/dx */
     width: calc(100% - 30px);
 }
-
-/* aside>div:last-child hr {
-    width: 100%;
-} */
 
 /* MAIN */
 main {
@@ -87,12 +76,10 @@ main ul li {
     margin: 0 -10px;
 }
 
-.recently-played>.go-flex div,
-.created-for-you>.go-flex div,
-.popolar-artists>.go-flex div {
+.main-section nav~section .card {
+    width: calc(100% / 6);
     /* debug */
-    width: 160px;
-    height: 160px;
+    height: 200px;
     background-color: red;
 }
 
