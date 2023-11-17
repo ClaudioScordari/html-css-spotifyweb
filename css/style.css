@@ -152,12 +152,12 @@ hr {
     width: 20px;
 }
 
-.end-aside>div:first-child>*,
-.end-aside>div:last-child>* {
+.end-aside>div:first-child>a *,
+.end-aside>div:last-child>a * {
     display: inline-block;
 }
 
-.end-aside>div:first-child>* {
+.end-aside>div:first-child>a * {
     vertical-align: middle;
 }
 
@@ -170,18 +170,19 @@ hr {
     font-size: 20px;
 }
 
-.end-aside>div:last-child>div:first-child {
+.end-aside>div:last-child>a div {
     width: 25px;
     height: 25px;
     background-color: #5A5A5A;
     border-radius: 50%;
     margin-right: 8px;
+    padding-top: 2px;
+    padding-left: 3px;
 }
 
-.end-aside>div:last-child>div:first-child img {
+.end-aside>div:last-child>a div:first-child img {
     width: 18px;
     margin: 0 auto;
-    padding-top: 2px;
 }
 
 /* MAIN */
