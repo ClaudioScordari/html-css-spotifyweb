@@ -54,11 +54,15 @@ h3 {
     padding-top: 15px;
 }
 
+h5 {
+    color: lightgrey;
+    font-size: 15px;
+}
+
 /* ASIDE */
 aside {
     color: grey;
     background-color: black;
-    padding: 15px;
     width: 250px;
     position: relative;
 }
@@ -68,10 +72,116 @@ aside .playlist>div:first-of-type div {
 }
 
 aside>div:last-child {
+    padding-left: 15px;
     position: absolute;
     bottom: 0;
-    /* (100% - 30px) perchè questi px sono i pading sx/dx */
-    width: calc(100% - 30px);
+    width: calc(100% - 15px);
+}
+
+.logo-image div {
+    padding: 15px;
+    width: 170px;
+    margin: 0 auto 20px auto;
+}
+
+.home div {
+    border-left: 4px solid yellowgreen;
+}
+
+.home div,
+.search div,
+.library div {
+    padding: 5px 0 5px 15px;
+    width: 55px;
+}
+
+.playlist {
+    margin-top: 15px;
+    padding-left: 15px;
+}
+
+.playlist>* {
+    margin-bottom: 10px;
+}
+
+.playlist h3 {
+    color: white;
+}
+
+.add-playlist {
+    width: 40px;
+    height: 40px;
+    background-color: #5A5A5A;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.add-playlist a {
+    color: black;
+}
+
+.add-playlist,
+.add-playlist+div {
+    vertical-align: middle;
+}
+
+.add-playlist+div a {
+    color: #5A5A5A;
+}
+
+.playlist-names>* {
+    padding: 10px 0 10px 0;
+}
+
+.playlist-names a {
+    color: #5A5A5A;
+    font-weight: bold;
+}
+
+.end-aside>*:not(hr) {
+    padding: 10px 0;
+}
+
+hr {
+    width: 100%;
+}
+
+.end-aside .img-download {
+    width: 20px;
+}
+
+.end-aside>div:first-child>*,
+.end-aside>div:last-child>* {
+    display: inline-block;
+}
+
+.end-aside>div:first-child>* {
+    vertical-align: middle;
+}
+
+.end-aside>div:last-child>* {
+    vertical-align: bottom;
+}
+
+.end-aside h4 {
+    color: white;
+    font-size: 20px;
+}
+
+.end-aside>div:last-child>div:first-child {
+    width: 25px;
+    height: 25px;
+    background-color: #5A5A5A;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.end-aside>div:last-child>div:first-child img {
+    width: 18px;
+    margin: 0 auto;
+    padding-top: 2px;
 }
 
 /* MAIN */
