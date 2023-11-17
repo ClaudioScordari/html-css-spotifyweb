@@ -39,6 +39,21 @@ img {
     background-color: yellowgreen;
 }
 
+h2 {
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+h4 {
+    color: grey;
+    padding-top: 15px;
+}
+
+h3 {
+    font-size: 20px;
+    padding-top: 15px;
+}
+
 /* ASIDE */
 aside {
     color: grey;
@@ -117,17 +132,32 @@ main nav ul li a+div {
     margin: 0 -10px;
 }
 
+.recently-played h2 {
+    margin-bottom: 30px;
+}
+
 .main-section nav~section .card {
+    text-align: center;
     width: calc(100% / 6);
-    /* debug */
-    height: 200px;
-    background-color: red;
+}
+
+.main-section nav~section .card a {
+    color: white;
 }
 
 .recently-played>.go-flex>*,
 .created-for-you>.go-flex>*,
 .popolar-artists>.go-flex>* {
     margin: 0 10px;
+}
+
+.created-for-you h4,
+.popolar-artists h4 {
+    margin-bottom: 30px;
+}
+
+.popolar-artists div>img {
+    border-radius: 50%;
 }
 
 /* FOOTER */
