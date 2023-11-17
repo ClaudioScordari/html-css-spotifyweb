@@ -64,10 +64,22 @@ main {
 }
 
 main .upgrade-bar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     height: 100px;
     background-color: #080B12;
     position: fixed;
-    width: 100%;
+    width: calc(100vw - 250px);
+    padding: 15px;
+}
+
+.upgrade-bar>a {
+    color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 10px 25px;
+    display: inline-block;
 }
 
 main>.main-section {
