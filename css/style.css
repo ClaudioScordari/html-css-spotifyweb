@@ -84,6 +84,20 @@ aside>div:last-child {
     margin: 0 auto 20px auto;
 }
 
+.logo-hidden {
+    width: 50px;
+    margin: 0 auto;
+    display: none;
+}
+
+aside nav:first-of-type h3 {
+    color: #5A5A5A;
+}
+
+#selected {
+    color: white;
+}
+
 .home div {
     border-left: 4px solid yellowgreen;
 }
@@ -93,6 +107,13 @@ aside>div:last-child {
 .library div {
     padding: 5px 0 5px 15px;
     width: 55px;
+}
+
+.home a>*,
+.search a>*,
+.library a>* {
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .playlist {
@@ -243,13 +264,21 @@ main nav ul li a+div {
     margin: 0 -10px;
 }
 
+.recently-played>.go-flex {
+    flex-wrap: wrap;
+}
+
+.recently-played h4 {
+    margin-bottom: 15px;
+}
+
 .recently-played h2 {
     margin-bottom: 30px;
 }
 
 .main-section nav~section .card {
     text-align: center;
-    width: calc(100% / 6);
+    width: calc((100% / 6) - 20px);
 }
 
 .main-section nav~section .card a {
@@ -293,7 +322,11 @@ footer>section:first-child>.go-flex {
 .volume,
 .track-playing {
     align-items: center;
-    width: 15%;
+    width: 25%;
+}
+
+.controls {
+    width: 50%;
 }
 
 .track-playing {
@@ -346,8 +379,95 @@ footer>section:first-child>.go-flex {
     background-color: #C3C6D1;
 }
 
-@media screen and (max-width: 1110px) {}
+@media screen and (max-width: 1110px) {
 
-@media screen and (max-width: 700px) {}
+    .main-section nav~section .card {
+        width: calc((100% / 4) - 20px);
+    }
 
-@media screen and (max-width: 600px) {}
+    .main-section nav ul li {
+        margin-bottom: 20px;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+
+    .main-section nav~section .card {
+        width: calc((100% / 2) - 20px);
+    }
+
+    .main-section nav ul li {
+        margin-bottom: 20px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    aside {
+        width: 60px;
+    }
+
+    main {
+        width: calc(100% - 60px);
+    }
+
+    main .upgrade-bar {
+        width: calc(100vw - 60px);
+    }
+
+    .home div,
+    .search div,
+    .library div {
+        padding: 0;
+        width: 40px;
+    }
+
+    footer .margin-special+.go-flex {
+        display: block;
+    }
+
+    aside .logo-image {
+        display: none;
+    }
+
+    .logo-hidden {
+        margin-bottom: 20px;
+        padding-top: 5px;
+        display: block;
+    }
+
+    aside .playlist {
+        display: none;
+    }
+
+    aside .home h3 {
+        display: none;
+    }
+
+    aside .library h3 {
+        display: none;
+    }
+
+    aside .search h3 {
+        display: none;
+    }
+
+    aside .home div {
+        border: none;
+    }
+
+    aside .end-aside a .img-download+h5 {
+        display: none;
+    }
+
+    aside .end-aside div:last-child div+h4 {
+        display: none;
+    }
+
+    hr {
+        display: none;
+    }
+
+}
