@@ -410,6 +410,10 @@ footer>section:first-child>.go-flex {
     background-color: #C3C6D1;
 }
 
+.margin-special>a {
+    color: #5A5A5A;
+}
+
 /* HOVER */
 main nav.go-flex a:hover,
 .change-color:hover {
@@ -436,6 +440,11 @@ main nav.go-flex a:hover,
 .bar-song:hover div:first-child:not(.circle),
 .bar-volume:hover div:first-child:not(.circle) {
     background-color: yellowgreen;
+}
+
+.underline:hover {
+    text-decoration: underline;
+    color: white;
 }
 
 /* MEDIA QUERIES */
