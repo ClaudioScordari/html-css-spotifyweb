@@ -59,6 +59,25 @@ h5 {
     font-size: 15px;
 }
 
+i {
+    color: #5A5A5A;
+}
+
+.change-color:hover {
+    color: white;
+}
+
+.circle {
+    border-radius: 50%;
+    background-color: white;
+    height: 15px;
+    width: 15px;
+    position: relative;
+    left: calc(100% - 15px);
+    bottom: 50%;
+    display: none;
+}
+
 /* ASIDE */
 aside {
     color: grey;
@@ -356,6 +375,10 @@ footer>section:first-child>.go-flex {
     background-color: #5A5A5A;
 }
 
+.bar-volume div .circle {
+    display: none;
+}
+
 .bar-volume>div {
     width: 30%;
     height: 5px;
@@ -380,7 +403,7 @@ footer>section:first-child>.go-flex {
     background-color: #5A5A5A;
 }
 
-.bar-song>div {
+.bar-song>div:first-child {
     width: 30%;
     height: 5px;
     border-radius: 20px;
@@ -403,6 +426,16 @@ main nav.go-flex a:hover,
 
 .card:hover .hidden-input.fa-circle-play {
     display: block;
+}
+
+.bar-song:hover .circle,
+.bar-volume:hover .circle {
+    display: block;
+}
+
+.bar-song:hover div:first-child:not(.circle),
+.bar-volume:hover div:first-child:not(.circle) {
+    background-color: yellowgreen;
 }
 
 /* MEDIA QUERIES */
