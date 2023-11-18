@@ -55,7 +55,7 @@ h3 {
 }
 
 h5 {
-    color: lightgrey;
+    color: #5A5A5A;
     font-size: 15px;
 }
 
@@ -92,10 +92,6 @@ aside>div:last-child {
 
 aside nav:first-of-type h3 {
     color: #5A5A5A;
-}
-
-#selected {
-    color: white;
 }
 
 .home div {
@@ -187,7 +183,7 @@ hr {
 }
 
 .end-aside h4 {
-    color: white;
+    color: #5A5A5A;
     font-size: 20px;
 }
 
@@ -279,6 +275,18 @@ main nav ul li a+div {
 .main-section nav~section .card {
     text-align: center;
     width: calc((100% / 6) - 20px);
+}
+
+.card a div {
+    position: relative;
+}
+
+.hidden-input.fa-circle-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
 }
 
 .main-section nav~section .card a {
@@ -379,6 +387,25 @@ footer>section:first-child>.go-flex {
     background-color: #C3C6D1;
 }
 
+/* HOVER */
+main nav.go-flex a:hover,
+.change-color:hover {
+    color: white;
+}
+
+.upgrade-bar a:hover {
+    transform: scale(1.2);
+}
+
+.card:hover img {
+    filter: opacity(20%);
+}
+
+.card:hover .hidden-input.fa-circle-play {
+    display: block;
+}
+
+/* MEDIA QUERIES */
 @media screen and (max-width: 1110px) {
 
     .main-section nav~section .card {
