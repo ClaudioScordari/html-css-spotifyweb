@@ -134,6 +134,7 @@ aside nav:first-of-type h3 {
 .playlist {
     margin-top: 15px;
     padding-left: 15px;
+    padding-right: 15px;
 }
 
 .playlist>* {
@@ -165,6 +166,11 @@ aside nav:first-of-type h3 {
 
 .add-playlist+div a {
     color: #5A5A5A;
+}
+
+.playlist-names {
+    height: 250px;
+    overflow-y: auto;
 }
 
 .playlist-names>* {
