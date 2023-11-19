@@ -132,6 +132,9 @@ aside nav:first-of-type h3 {
 }
 
 .playlist {
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 50%;
     margin-top: 15px;
     padding-left: 15px;
     padding-right: 15px;
@@ -169,7 +172,7 @@ aside nav:first-of-type h3 {
 }
 
 .playlist-names {
-    height: 250px;
+    height: 100%;
     overflow-y: auto;
 }
 
