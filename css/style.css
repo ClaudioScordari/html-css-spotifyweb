@@ -213,8 +213,8 @@ hr {
 }
 
 .end-aside>div:last-child>a div {
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     background-color: #5A5A5A;
     border-radius: 50%;
     margin-right: 8px;
@@ -223,8 +223,14 @@ hr {
 }
 
 .end-aside>div:last-child>a div:first-child img {
-    width: 18px;
-    margin: 0 auto;
+    width: 75%;
+    position: relative;
+    left: 3px
+}
+
+.end-aside>div:last-child>a div:first-child,
+.end-aside>div:last-child>a div:first-child+h4 {
+    vertical-align: bottom;
 }
 
 /* MAIN */
@@ -545,4 +551,18 @@ main nav.go-flex a:hover,
         display: none;
     }
 
+    aside nav>ul>.home>a>div:first-child,
+    aside nav>ul>.search>a>div:first-child,
+    aside nav>ul>.library>a>div:first-child {
+        margin-left: calc(50% - 20px);
+        margin-bottom: 5px;
+    }
+
+    aside .end-aside .img-download {
+        margin-left: calc(50% - 10px);
+    }
+
+    aside .end-aside>div:last-child>a>div {
+        margin-left: calc(50% - 12.5px);
+    }
 }
