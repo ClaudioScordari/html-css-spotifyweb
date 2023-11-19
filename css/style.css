@@ -563,6 +563,6 @@ main nav.go-flex a:hover,
     }
 
     aside .end-aside>div:last-child>a>div {
-        margin-left: calc(50% - 12.5px);
+        margin-left: calc(50% - 15px);
     }
 }
